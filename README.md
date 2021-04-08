@@ -7,9 +7,6 @@ A terraform module to create ALB Glue Catalog for Athena.
 
 ## Usage example
 ```hcl
-data "aws_region" "current" {
-}
-
 module "lb_logs" {
   source = "github.com/DingGGu/terraform-aws-athena-lb-access-logs.git"
   athena_database_s3_bucket_name = "aws-athena-query-results-${data.aws_caller_identity.current.account_id}-${data.aws_region.current.name}"
