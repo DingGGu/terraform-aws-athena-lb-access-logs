@@ -1,12 +1,11 @@
-resource "aws_athena_database" "lb_access_log" {
+resource "aws_glue_catalog_database" "lb_access_log" {
   name = var.athena_database
-  bucket = var.athena_database_s3_bucket_name
 }
 
 resource "aws_glue_catalog_table" "alb_logs" {
   name = "alb_logs"
   owner = "hadoop"
-  database_name = aws_athena_database.lb_access_log.name
+  database_name = aws_glue_catalog_database.lb_access_log.name
 
   table_type = "EXTERNAL_TABLE"
 
