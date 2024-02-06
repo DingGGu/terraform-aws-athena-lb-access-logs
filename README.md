@@ -1,5 +1,6 @@
 # terraform-aws-athena-lb-access-logs
 A terraform module to create ALB Glue Catalog for Athena.
+[AWS docs](https://docs.aws.amazon.com/athena/latest/ug/application-load-balancer-logs.html#create-alb-table-partition-projection)
 
 ## Features
 1. Glue Catalog support Athena Partition Projection. So you don't have to manage partition keys.
