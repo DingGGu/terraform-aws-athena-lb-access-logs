@@ -6,6 +6,6 @@ output "glue_catalog_table_alb_logs_arn" {
   value = aws_glue_catalog_table.alb_logs.arn
 }
 
-output "glue_catalog_table_nlb_logs_arn" {
+output "glue_catalog_table_nlb_logs_arn" {
   value = aws_glue_catalog_table.nlb_logs.arn
 }
