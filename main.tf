@@ -170,7 +170,7 @@ resource "aws_glue_catalog_table" "alb_logs" {
       type = "string"
     }
     columns {
-      name = "tid"
+      name = "conn_trace_id"
       type = "string"
     }
 
